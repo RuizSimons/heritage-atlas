@@ -1,0 +1,17 @@
+baseURL = '/'
+title = 'Heritage Architecture Atlas'
+enableRobotsTXT = false
+
+[module]
+[[module.mounts]]
+source = 'data'
+target = 'data'
+includeFiles = ['index.json']
+
+[[module.mounts]]
+source = 'data/seed'
+target = 'content/buildings'
+includeFiles = ['*.md']
+
+[params]
+description = 'A cultural-heritage architecture atlas'

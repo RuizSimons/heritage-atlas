@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "generated_at": "2026-07-28T21:57:18Z",
+    "record_count": 4,
+    "schema_version": "v0.1.0"
+  },
+  "records": [
+    {
+      "id": "451bf4ee-e0e8-4a6b-8dc6-fabd4f92a4a4",
+      "name": "Westerkerk",
+      "city": "Amsterdam",
+      "country_code": "NL",
+      "coordinates": {
+        "lat": 52.3753,
+        "lng": 4.883
+      },
+      "year_built": 1620,
+      "architect": "Hendrick de Keyser (started), completed by Thomas de Keyser",
+      "architectural_style": "Renaissance/Mannerist",
+      "heritage_status": "National Monument",
+      "heritage_criteria": [
+        "i"
+      ],
+      "status": "active",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg/330px-Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg",
+      "record_path": "seed/westerkerk.json"
+    },
+    {
+      "id": "821aa1fe-0300-441e-adc1-d1d2fed18a3b",
+      "name": "Groninger Museum",
+      "city": "Groningen",
+      "country_code": "NL",
+      "coordinates": {
+        "lat": 53.2204,
+        "lng": 6.5711
+      },
+      "year_built": 1994,
+      "architect": "Alessandro Mendini, Coop Himmelb(l)au, Philippe Starck",
+      "architectural_style": "Postmodern/Deconstructivist",
+      "heritage_status": "None",
+      "heritage_criteria": [
+        "ii"
+      ],
+      "status": "active",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Groninger_Museum_2.jpg/330px-Groninger_Museum_2.jpg",
+      "record_path": "seed/groninger-museum.json"
+    },
+    {
+      "id": "c5c40b57-5d70-4e93-8f3c-2e6f8dfd9e31",
+      "name": "Rietveld Schröder House",
+      "city": "Utrecht",
+      "country_code": "NL",
+      "coordinates": {
+        "lat": 52.0907,
+        "lng": 5.1195
+      },
+      "year_built": 1924,
+      "architect": "Gerrit Rietveld",
+      "architectural_style": "De Stijl",
+      "heritage_status": "UNESCO World Heritage",
+      "heritage_criteria": [
+        "i",
+        "ii",
+        "iii"
+      ],
+      "status": "active",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG/330px-Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG",
+      "record_path": "building.example.json"
+    },
+    {
+      "id": "f4e7b2a1-9d3c-4e58-b91f-6c7d8e0a2b34",
+      "name": "Historic Inner City of Paramaribo",
+      "city": "Paramaribo",
+      "country_code": "SR",
+      "coordinates": {
+        "lat": 5.85222222,
+        "lng": -55.20388889
+      },
+      "year_built": 1667,
+      "architect": null,
+      "architectural_style": "Dutch colonial",
+      "heritage_status": "UNESCO World Heritage",
+      "heritage_criteria": [
+        "ii",
+        "iv"
+      ],
+      "status": "active",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Paramaribo_city_collage.png",
+      "record_path": "seed/historic-inner-city-paramaribo.json"
+    }
+  ]
+}

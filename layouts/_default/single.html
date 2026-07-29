@@ -1,0 +1,78 @@
+{{ define "main" }}
+<article class="building-detail">
+  <header class="building-header">
+    <h1 class="building-title">{{ if .Title }}{{ .Title }}{{ else }}{{ .Params.name }}{{ end }}</h1>
+    {{ with .Params.city }}
+    <p class="building-location">{{ . }}, {{ $.Params.country_code }}</p>
+    {{ end }}
+  </header>
+
+  {{/* Hero image - first from gallery */}}
+  {{ if and .Params.image_gallery (gt (len .Params.image_gallery) 0) }}
+  <div class="building-hero">
+    {{ $firstImage := index .Params.image_gallery 0 }}
+    <img src="{{ $firstImage.url }}" alt="{{ if $firstImage.caption }}{{ $firstImage.caption }}{{ else }}{{ .Title }}{{ end }}" loading="lazy">
+    {{ if $firstImage.caption }}
+    <p class="image-caption">{{ $firstImage.caption }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{/* Main content from markdown body */}}
+  <section class="building-content">
+    {{ .Content }}
+  </section>
+
+  {{/* Historical events timeline */}}
+  {{ if .Params.historical_events }}
+  <section class="historical-events">
+    <h2>Historical Events</h2>
+    <ul class="event-timeline">
+      {{ range .Params.historical_events }}
+      <li class="event-item">
+        <span class="event-year">{{ .year }}</span>
+        <span class="event-text">{{ .event }}</span>
+        {{ if .source }}
+        <a href="{{ .source }}" target="_blank" rel="noopener" class="event-source">[source]</a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{/* Image gallery grid */}}
+  {{ if and .Params.image_gallery (gt (len .Params.image_gallery) 1) }}
+  <section class="image-gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery-grid">
+      {{ range .Params.image_gallery }}
+      <figure class="gallery-item">
+        <img src="{{ .url }}" alt="{{ if .caption }}{{ .caption }}{{ else }}Building image{{ end }}" loading="lazy">
+        {{ if .caption }}
+        <figcaption>{{ .caption }}{{ if .license }} ({{ .license }}){{ end }}</figcaption>
+        {{ end }}
+      </figure>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* Sources */}}
+  {{ if .Params.sources }}
+  <section class="sources">
+    <h2>Sources</h2>
+    <ul class="sources-list">
+      {{ range .Params.sources }}
+      <li class="source-item">
+        <a href="{{ .url }}" target="_blank" rel="noopener">{{ if .title }}{{ .title }}{{ else }}{{ .url }}{{ end }}</a>
+        {{ if .accessed_date }}
+        <span class="accessed-date">(accessed: {{ .accessed_date }})</span>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

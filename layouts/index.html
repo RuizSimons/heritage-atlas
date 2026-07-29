@@ -1,0 +1,46 @@
+{{ define "main" }}
+<header class="site-header">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="subtitle">Exploring cultural heritage through architecture</p>
+</header>
+
+<section class="buildings-grid">
+  {{ $index := site.Data.index }}
+  {{ if $index }}
+    {{ range $index.records }}
+    {{ $slug := .name | urlize }}
+    {{/* Fix diacritics: replace common encoded chars */}}
+    {{ $slug = replace $slug "%C3%B6" "o" }}
+    {{ $slug = replace $slug "%C3%BC" "u" }}
+    {{ $slug = replace $slug "%C3%A4" "a" }}
+    {{ $slug = replace $slug "%C3%A9" "e" }}
+    {{ $slug = replace $slug "%C3%AB" "e" }}
+    <a href="/buildings/{{ $slug }}/" class="building-card-link">
+      <article class="building-card">
+        {{ if .thumbnail_url }}
+        <div class="building-thumbnail">
+          <img src="{{ .thumbnail_url }}" alt="{{ .name }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="building-info">
+          <h2 class="building-name">{{ .name }}</h2>
+          <p class="building-location">{{ .city }}, {{ .country_code }}</p>
+          <dl class="building-details">
+            <dt>Built</dt>
+            <dd>{{ .year_built }}</dd>
+            <dt>Architect</dt>
+            <dd>{{ .architect }}</dd>
+            <dt>Style</dt>
+            <dd>{{ .architectural_style }}</dd>
+            <dt>Heritage Status</dt>
+            <dd>{{ .heritage_status }}</dd>
+          </dl>
+        </div>
+      </article>
+    </a>
+    {{ end }}
+  {{ else }}
+    <p class="no-data">No building data available.</p>
+  {{ end }}
+</section>
+{{ end }}
