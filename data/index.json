@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-29T18:58:44Z",
+    "generated_at": "2026-07-29T19:02:45Z",
     "record_count": 4,
     "schema_version": "v0.1.0"
   },
@@ -8,6 +8,7 @@
     {
       "id": "451bf4ee-e0e8-4a6b-8dc6-fabd4f92a4a4",
       "name": "Westerkerk",
+      "slug": "westerkerk",
       "city": "Amsterdam",
       "country_code": "NL",
       "coordinates": {
@@ -29,6 +30,7 @@
     {
       "id": "821aa1fe-0300-441e-adc1-d1d2fed18a3b",
       "name": "Groninger Museum",
+      "slug": "groninger-museum",
       "city": "Groningen",
       "country_code": "NL",
       "coordinates": {
@@ -50,6 +52,7 @@
     {
       "id": "c5c40b57-5d70-4e93-8f3c-2e6f8dfd9e31",
       "name": "Rietveld Schröder House",
+      "slug": "rietveld-schroder-house",
       "city": "Utrecht",
       "country_code": "NL",
       "coordinates": {
@@ -73,6 +76,7 @@
     {
       "id": "f4e7b2a1-9d3c-4e58-b91f-6c7d8e0a2b34",
       "name": "Historic Inner City of Paramaribo",
+      "slug": "historic-inner-city-paramaribo",
       "city": "Paramaribo",
       "country_code": "SR",
       "coordinates": {

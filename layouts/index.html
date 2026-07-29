@@ -8,7 +8,7 @@
   {{ $index := site.Data.index }}
   {{ if $index }}
     {{ range $index.records }}
-    {{ $slug := .name | urlize }}
+    {{ $slug := .slug | default (.name | urlize) }}
     {{/* Fix diacritics: replace common encoded chars */}}
     {{ $slug = replace $slug "%C3%B6" "o" }}
     {{ $slug = replace $slug "%C3%BC" "u" }}
