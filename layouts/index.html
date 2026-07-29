@@ -20,20 +20,41 @@
         {{ if .thumbnail_url }}
         <div class="building-thumbnail">
           <img src="{{ .thumbnail_url }}" alt="{{ .name }}" loading="lazy">
+          {{ if eq .heritage_status "UNESCO World Heritage" }}
+          <span class="thumbnail-badge unesco">UNESCO</span>
+          {{ else if eq .heritage_status "National Monument" }}
+          <span class="thumbnail-badge national">National</span>
+          {{ end }}
         </div>
         {{ end }}
         <div class="building-info">
           <h2 class="building-name">{{ .name }}</h2>
           <p class="building-location">{{ .city }}, {{ .country_code }}</p>
+
+          {{/* Description preview from the record */}}
+          {{ with .description }}
+          <p class="building-description">{{ . | truncate 180 }}</p>
+          {{ end }}
+
+          {{/* Tags row: year, style, heritage status */}}
+          <div class="building-meta">
+            {{ with .year_built }}
+            <span class="meta-tag year-tag">{{ . }}</span>
+            {{ end }}
+            {{ with .architectural_style }}
+            <span class="meta-tag style-tag">{{ . }}</span>
+            {{ end }}
+            {{ if ne .heritage_status "None" }}
+            <span class="meta-tag">{{ .heritage_status }}</span>
+            {{ end }}
+          </div>
+
+          {{/* Compact details for quick scanning */}}
           <dl class="building-details">
-            <dt>Built</dt>
-            <dd>{{ .year_built }}</dd>
+            {{ with .architect }}
             <dt>Architect</dt>
-            <dd>{{ .architect }}</dd>
-            <dt>Style</dt>
-            <dd>{{ .architectural_style }}</dd>
-            <dt>Heritage Status</dt>
-            <dd>{{ .heritage_status }}</dd>
+            <dd>{{ . }}</dd>
+            {{ end }}
           </dl>
         </div>
       </article>
@@ -43,4 +64,8 @@
     <p class="no-data">No building data available.</p>
   {{ end }}
 </section>
+
+<footer class="site-footer">
+  Heritage Architecture Atlas &middot; Living record of cultural heritage
+</footer>
 {{ end }}

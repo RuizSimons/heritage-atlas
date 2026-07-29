@@ -5,6 +5,22 @@
     {{ with .Params.city }}
     <p class="building-location">{{ . }}, {{ $.Params.country_code }}</p>
     {{ end }}
+
+    {{/* Heritage status + style badges */}}
+    <div class="detail-badges">
+      {{ if eq .Params.heritage_status "UNESCO World Heritage" }}
+      <span class="detail-badge unesco">UNESCO World Heritage</span>
+      {{ else if eq .Params.heritage_status "National Monument" }}
+      <span class="detail-badge national">National Monument</span>
+      {{ else if .Params.heritage_status }}
+      {{ if ne .Params.heritage_status "None" }}
+      <span class="detail-badge">{{ .Params.heritage_status }}</span>
+      {{ end }}
+      {{ end }}
+      {{ with .Params.architectural_style }}
+      <span class="detail-badge style">{{ . }}</span>
+      {{ end }}
+    </div>
   </header>
 
   {{/* Hero image - first from gallery */}}
@@ -13,10 +29,40 @@
     {{ $firstImage := index .Params.image_gallery 0 }}
     <img src="{{ $firstImage.url }}" alt="{{ if $firstImage.caption }}{{ $firstImage.caption }}{{ else }}{{ .Title }}{{ end }}" loading="lazy">
     {{ if $firstImage.caption }}
-    <p class="image-caption">{{ $firstImage.caption }}</p>
+    <p class="image-caption">{{ $firstImage.caption }}{{ if $firstImage.license }} &middot; {{ $firstImage.license }}{{ end }}</p>
     {{ end }}
   </div>
   {{ end }}
+
+  {{/* Info bar: year, architect, coordinates */}}
+  <div class="detail-info-bar">
+    {{ with .Params.year_built }}
+    <div class="info-item">
+      <span class="info-label">Year Built</span>
+      <span class="info-value">{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.architect }}
+    <div class="info-item">
+      <span class="info-label">Architect</span>
+      <span class="info-value">{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.coordinates }}
+    <div class="info-item">
+      <span class="info-label">Coordinates</span>
+      <span class="info-value">{{ .lat }}, {{ .lng }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.heritage_criteria }}
+    {{ if gt (len .) 0 }}
+    <div class="info-item">
+      <span class="info-label">Criteria</span>
+      <span class="info-value">{{ delimit . ", " }}</span>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
 
   {{/* Main content from markdown body */}}
   <section class="building-content">
@@ -75,4 +121,6 @@
   </section>
   {{ end }}
 </article>
+
+<a href="/" class="back-to-home">&larr; Back to all buildings</a>
 {{ end }}

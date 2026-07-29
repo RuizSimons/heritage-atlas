@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-28T21:57:18Z",
+    "generated_at": "2026-07-29T18:45:42Z",
     "record_count": 4,
     "schema_version": "v0.1.0"
   },
@@ -21,8 +21,9 @@
       "heritage_criteria": [
         "i"
       ],
+      "description": "The Westerkerk is a Protestant church located on the Prinsengracht canal in Amsterdam, built between 1620 and 1631. Designed by Hendrick de Keyser in the Dutch Renaissance style and completed by his son Thomas after his death, it stands as one of Amsterdam's most iconic landmarks. The church's towering Westertoren (85 meters) dominates the canal district skyline. Rembrandt was buried here in 1669, though his exact grave location is unknown. The church represents a masterwork of Dutch Renaissance architecture and played a central role in Amsterdam's religious and cultural life during the Golden Age.\n",
       "status": "active",
-      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg/330px-Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg",
+      "thumbnail_url": "https://example.com/images/westerkerk1.jpg",
       "record_path": "seed/westerkerk.json"
     },
     {
@@ -41,6 +42,7 @@
       "heritage_criteria": [
         "ii"
       ],
+      "description": "The Groninger Museum is a contemporary art museum in Groningen, Netherlands, completed in 1994. Built on an artificial island in the Diepenring canal, it represents one of the most ambitious postmodern architectural projects in the Netherlands. The museum was designed through an unprecedented collaboration between three distinct architectural voices: Alessandro Mendini's colorful pavilions, Coop Himmelb(l)au's deconstructivist silver tower, and Philippe Starck's interior design. This bold fusion of styles created a landmark that exhibits the interchange of human values through architectural experimentation, challenging traditional museum design with its vibrant colors, unconventional forms, and integration with the surrounding water landscape.",
       "status": "active",
       "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Groninger_Museum_2.jpg/330px-Groninger_Museum_2.jpg",
       "record_path": "seed/groninger-museum.json"
@@ -63,6 +65,7 @@
         "ii",
         "iii"
       ],
+      "description": "The Rietveld Schröder House, designed by Gerrit Rietveld in 1924, is a masterpiece of the De Stijl movement. Its flexible interior spaces and pioneering use of rectangular forms and primary colours exemplify modernist architecture.",
       "status": "active",
       "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG/330px-Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG",
       "record_path": "building.example.json"
@@ -84,6 +87,7 @@
         "ii",
         "iv"
       ],
+      "description": "The historic inner city of Paramaribo has been a UNESCO World Heritage Site since 2002. Founded in the 17th century as a Dutch colonial trading post on the Suriname River, its street plan remains intact and features wooden buildings that illustrate the gradual fusion of Dutch and local architectural traditions. The site includes the Presidential Palace, Fort Zeelandia, and several historic churches and synagogues, all reflecting the multicultural heritage of Suriname.",
       "status": "active",
       "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Paramaribo_city_collage.png",
       "record_path": "seed/historic-inner-city-paramaribo.json"
