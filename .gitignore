@@ -1,9 +1,24 @@
-
+# Hugo build output
 /public/
 /resources/
 .hugo_build.lock
+
+# Build artifacts that Hugo generates at repo root if misconfigured
+# (these should never be tracked — they belong in public/)
+/404.html
+/buildings/
+/categories/
+/css/
+/index.html
+/index.xml
+/sitemap.xml
+/tags/
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Dependencies
 /node_modules/
 
 # Secrets - never commit
