@@ -10,7 +10,7 @@ country_code: NL
 city: Amsterdam
 coordinates:
   lat: 52.3753
-  lng: 4.8830
+  lng: 4.883
 year_built: 1620
 year_completed_year_extension: 1631
 architect: Hendrick de Keyser (started), completed by Thomas de Keyser
@@ -19,14 +19,8 @@ heritage_status: National Monument
 heritage_criteria:
   - i
 description: >
-  The Westerkerk is a Protestant church located on the Prinsengracht canal in
-  Amsterdam, built between 1620 and 1631. Designed by Hendrick de Keyser in the
-  Dutch Renaissance style and completed by his son Thomas after his death, it
-  stands as one of Amsterdam's most iconic landmarks. The church's towering
-  Westertoren (85 meters) dominates the canal district skyline. Rembrandt was
-  buried here in 1669, though his exact grave location is unknown. The church
-  represents a masterwork of Dutch Renaissance architecture and played a central
-  role in Amsterdam's religious and cultural life during the Golden Age.
+  The Westerkerk is a Protestant church located on the Prinsengracht canal in Amsterdam, built between 1620 and 1631. Designed by Hendrick de Keyser in the Dutch Renaissance style and completed by his son Thomas after his death, it stands as one of Amsterdam's most iconic landmarks. The church's towering Westertoren (85 meters) dominates the canal district skyline. Rembrandt was buried here in 1669, though his exact grave location is unknown. The church represents a masterwork of Dutch Renaissance architecture and played a central role in Amsterdam's religious and cultural life during the Golden Age.
+  
 historical_events:
   - year: 1620
     event: Construction began under Hendrick de Keyser
@@ -38,12 +32,12 @@ historical_events:
     event: Designated as National Monument (Rijksmonument 6746)
     source: https://en.wikipedia.org/wiki/Westerkerk
 image_gallery:
-  - url: https://example.com/images/westerkerk1.jpg
+  - url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg/640px-Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg
     caption: Westerkerk from Prinsengracht
-    license: CC-BY
-  - url: https://example.com/images/westerkerk2.jpg
+    license: CC-BY-SA
+  - url: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Westerkerk_Amsterdam.jpg/640px-Westerkerk_Amsterdam.jpg
     caption: Westertoren tower
-    license: CC-BY
+    license: CC-BY-SA
 sources:
   - url: https://en.wikipedia.org/wiki/Westerkerk
     title: Wikipedia - Westerkerk
@@ -60,4 +54,3 @@ status: active
 
 The Westerkerk is a Protestant church located on the Prinsengracht canal in Amsterdam, built between 1620 and 1631. Designed by Hendrick de Keyser in the Dutch Renaissance style and completed by his son Thomas after his death, it stands as one of Amsterdam's most iconic landmarks. The church's towering Westertoren (85 meters) dominates the canal district skyline. Rembrandt was buried here in 1669, though his exact grave location is unknown. The church represents a masterwork of Dutch Renaissance architecture and played a central role in Amsterdam's religious and cultural life during the Golden Age.
 
-A designated National Monument since 1970, the Westerkerk continues to serve as both an active Protestant church and a beloved symbol of Amsterdam's Golden Age heritage.

@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://ruizsimons.github.io/heritage-atlas/'
 title = 'Heritage Architecture Atlas'
 enableRobotsTXT = false
 

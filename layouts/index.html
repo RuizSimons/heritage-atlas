@@ -15,7 +15,7 @@
     {{ $slug = replace $slug "%C3%A4" "a" }}
     {{ $slug = replace $slug "%C3%A9" "e" }}
     {{ $slug = replace $slug "%C3%AB" "e" }}
-    <a href="/buildings/{{ $slug }}/" class="building-card-link">
+    <a href="{{ printf "buildings/%s/" $slug | relURL }}" class="building-card-link">
       <article class="building-card">
         {{ if .thumbnail_url }}
         <div class="building-thumbnail">

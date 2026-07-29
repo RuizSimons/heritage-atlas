@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-29T18:45:42Z",
+    "generated_at": "2026-07-29T18:58:44Z",
     "record_count": 4,
     "schema_version": "v0.1.0"
   },
@@ -23,7 +23,7 @@
       ],
       "description": "The Westerkerk is a Protestant church located on the Prinsengracht canal in Amsterdam, built between 1620 and 1631. Designed by Hendrick de Keyser in the Dutch Renaissance style and completed by his son Thomas after his death, it stands as one of Amsterdam's most iconic landmarks. The church's towering Westertoren (85 meters) dominates the canal district skyline. Rembrandt was buried here in 1669, though his exact grave location is unknown. The church represents a masterwork of Dutch Renaissance architecture and played a central role in Amsterdam's religious and cultural life during the Golden Age.\n",
       "status": "active",
-      "thumbnail_url": "https://example.com/images/westerkerk1.jpg",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg/640px-Amsterdam_%28NL%29%2C_Westerkerk_--_2015_--_7186.jpg",
       "record_path": "seed/westerkerk.json"
     },
     {
