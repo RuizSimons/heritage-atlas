@@ -9,6 +9,11 @@ target = 'data'
 includeFiles = ['index.json']
 
 [[module.mounts]]
+source = 'data'
+target = 'content/buildings'
+includeFiles = ['building.example.md']
+
+[[module.mounts]]
 source = 'data/seed'
 target = 'content/buildings'
 includeFiles = ['*.md']
